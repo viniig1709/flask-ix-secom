@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %} Contador de palavras {% endblock %}
+
+{% block content %}
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4"> Encontre quantas palavras existem em um texto qualquer! </h2>
+
+    <form id="word-form" name="word-form" action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="md-form mb-4">
+            <label for="inputPalavra" class="sr-only">Name</label>
+            <input type="text" id="inputPalavra" name="palavra" class="form-control" placeholder="Digite uma palavra" required autofocus>
+        </div>
+
+        {# <div class="md-form">
+            <label for="inputPeso" class="sr-only">Name</label>
+            <input type="number" step="any" id="inputPeso" name="peso" class="form-control" placeholder="Peso em Kg" required autofocus>
+        </div> #}
+
+        <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Calcular</button>
+    </form>
+
+{% endblock %}

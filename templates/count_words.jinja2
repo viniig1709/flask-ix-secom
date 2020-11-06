@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %} Words {% endblock %}
+
+{% block content %}
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Resultado do contador de palavras</h2>
+
+    <table class="table table-light table-borderless">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Regras</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Caso não seja inserido nenhuma palavra</td>
+            </tr>
+            <tr>
+                <td>Caso seja inserido apenas caracteres como: , + - ; :</td>
+            </tr>
+            <tr>
+                <td>Apenas números</td>
+            </tr>
+            <tr>
+                <td>Uma palavra</td>
+            </tr>
+            <tr>
+                <td>Muitas palavras</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1><span class="badge badge-info"> Quantidade de palavras encontradas: {{ qtd_palavras }}</span></h1>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app_1:
+    image: python:3.8.6
+    container_name: app1
+    command: |
+      echo "Hello from app1"
+
+  app_2:
+    image: python:3.8.6
+    container_name: app2
+    command: |
+      echo "Hello from app2"
